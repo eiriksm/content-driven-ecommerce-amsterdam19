@@ -21,8 +21,28 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			div.link {
+  position: absolute;
+  background: none;
+  color: #fff;
+  bottom: 10px;
+  left: 10px;
+  font-family: "Lato", sans-serif;
+  z-index: 100;
+}
+div.link a {
+  color: #fff;
+  text-decoration: none;
+}
+div.black h2 {
+  color: #000;
+}
+
+		</style>
 	</head>
 	<body>
+		<div class="link"><a class="tw" href="https://twitter.com/orkj">@orkj: Content driven e-Commerce</a></div>
 		<div class="reveal">
 			<div class="slides">
 				<section data-background="gifs/santa.gif">
